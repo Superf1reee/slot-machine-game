@@ -50,7 +50,8 @@ cd slot-machine-game
 python -m http.server 8000
 # Open http://localhost:8000 in browser
 
-### Development
+
+## Development
 The project requires no build tools or dependencies. Simply open index.html in any modern browser to start development.
 
 # Key Files
