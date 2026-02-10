@@ -17,18 +17,6 @@ A browser-based virtual slot machine game built with vanilla JavaScript. Feature
 - **LocalStorage** - User data persistence
 - **GitHub Pages** - Free hosting
 
-## Project Structure: 
-slot-machine-game/
-├── index.html # Main entry point
-├── style.css # All styles
-├── script.js # Core application
-├── auth.js # Authentication logic
-├── game.js # Game mechanics
-├── insults.json # Game messages
-├── README.md # Documentation
-└── .gitignore # Git ignore rules
-
-
 ## How to Play
 1. Create an account (data stored locally)
 2. Start with 5,000 virtual coins
@@ -68,6 +56,7 @@ auth.js - User registration/login system
 style.css - Complete styling with responsive design
 
 Learning Outcomes
+
 This project demonstrates:
 
 DOM manipulation without frameworks
@@ -81,6 +70,7 @@ Modular JavaScript architecture
 Responsive web design principles
 
 Contributing
+
 Contributions are welcome! Feel free to submit issues and pull requests.
 
 
