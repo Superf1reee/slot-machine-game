@@ -32,6 +32,8 @@ If you enjoy my project, you can support me here:
 
 ## Quick Start
 
+## 🚀 Quick Start
+
 ### Option 1: GitHub Pages (Recommended)
 1. Fork this repository
 2. Go to Settings → Pages
@@ -39,17 +41,16 @@ If you enjoy my project, you can support me here:
 4. Your game will be live at `https://[username].github.io/slot-machine-game/`
 
 ### Option 2: Local Development
-```bash
-# Clone repository
-git clone https://github.com/superf1reee/slot-machine-game.git
-
-# Navigate to project
-cd slot-machine-game
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/superf1reee/slot-machine-game.git
+   cd slot-machine-game
 
 # Run local server
 python -m http.server 8000
 # Open http://localhost:8000 in browser
-
+# Or using Node.js: npx serve
+# Or simply open index.html in browser
 
 ## Development
 The project requires no build tools or dependencies. Simply open index.html in any modern browser to start development.
