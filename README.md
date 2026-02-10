@@ -55,8 +55,6 @@ auth.js - User registration/login system
 
 style.css - Complete styling with responsive design
 
-Learning Outcomes
-
 This project demonstrates:
 
 DOM manipulation without frameworks
