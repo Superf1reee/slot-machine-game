@@ -47,12 +47,11 @@ If you enjoy my project, you can support me here:
    cd slot-machine-game
 
 # Run local server
-```bash
 python -m http.server 8000
 # Open http://localhost:8000 in browser
 # Or using Node.js: npx serve
 # Or simply open index.html in browser
-
+```
 
 ## Development
 The project requires no build tools or dependencies. Simply open index.html in any modern browser to start development.
