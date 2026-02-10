@@ -2,6 +2,11 @@
 
 A browser-based virtual slot machine game built with vanilla JavaScript. Features user accounts, achievements, and full game statistics.
 
+If you enjoy my project, you can support me here:  
+[https://www.donationalerts.com/r/superf1re](https://www.donationalerts.com/r/superf1re)
+
+[![GitHub stars](https://img.shields.io/github/stars/superf1reee/repo?style=social)](https://github.com/superf1reee/repo/stargazers)
+
 ## Features
 - 5-reel slot machine with smooth animations
 - Local storage-based user accounts
@@ -70,12 +75,6 @@ Responsive web design principles
 Contributing
 
 Contributions are welcome! Feel free to submit issues and pull requests.
-
-If you enjoy my project, you can support me here:  
-[https://www.donationalerts.com/r/superf1re](https://www.donationalerts.com/r/superf1re)
-
-[![GitHub stars](https://img.shields.io/github/stars/superf1reee/repo?style=social)](https://github.com/superf1reee/repo/stargazers)
-
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
