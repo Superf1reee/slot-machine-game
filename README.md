@@ -5,7 +5,7 @@ A browser-based virtual slot machine game built with vanilla JavaScript. Feature
 If you enjoy my project, you can support me here:  
 [https://www.donationalerts.com/r/superf1re](https://www.donationalerts.com/r/superf1re)
 
-[![GitHub stars](https://img.shields.io/github/stars/superf1reee/repo?style=social)](https://github.com/superf1reee/repo/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/superf1reee/repo?style=social)](https://github.com/Superf1reee/slot-machine-game)
 
 ## Features
 - 5-reel slot machine with smooth animations
