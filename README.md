@@ -49,47 +49,19 @@ cd slot-machine-game
 Step 2: Run local server (choose one)
 Using Python:
 
+Run a local server (choose one):
+
 bash
+# Python 3
 python -m http.server 8000
-# Then open http://localhost:8000
-Using Node.js:
 
-bash
+# Or using Node.js
 npx serve
-# Then open the URL shown in terminal
-Simplest way:
-Just open index.html file directly in your browser.
 
-Step 3: Start playing
-Open your browser and navigate to the local server URL.
+# Or simply open index.html in browser
+Open http://localhost:8000 in your browser
 
-text
-
-**Или самый простой вариант:**
-
-```markdown
-### Option 2: Local Development
-
-1. **Clone and enter:**
-   ```bash
-   git clone https://github.com/superf1reee/slot-machine-game.git
-   cd slot-machine-game
-Start server (choose one):
-
-Python: python -m http.server 8000
-
-Node.js: npx serve
-
-Simplest: Just open index.html in browser
-
-Open browser:
-
-Python server: http://localhost:8000
-
-Node.js server: http://localhost:3000 (or as shown)
-
-Direct file: file:///path/to/index.html
-## Development
+🔧 Development
 The project requires no build tools or dependencies. Simply open index.html in any modern browser to start development.
 
 # Key Files
