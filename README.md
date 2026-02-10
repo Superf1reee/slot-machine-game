@@ -40,18 +40,27 @@ If you enjoy my project, you can support me here:
 3. Select "main branch" as source
 4. Your game will be live at `https://[username].github.io/slot-machine-game/`
 
-### Option 2: Local Development
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/superf1reee/slot-machine-game.git
-   cd slot-machine-game
+```bash
+# Clone repository
+git clone https://github.com/superf1reee/slot-machine-game.git
 
-# Run local server
+# Navigate to project
+cd slot-machine-game
+
+# Run local server (choose one method)
+
+# Method 1: Python
 python -m http.server 8000
-# Open http://localhost:8000 in browser
-# Or using Node.js: npx serve
-# Or simply open index.html in browser
-```
+
+# Method 2: Node.js
+npx serve
+
+# Method 3: Direct file (simplest)
+# Just open index.html in your browser
+
+# Open in browser
+# For Method 1: http://localhost:8000
+# For Method 2: http://localhost:3000 (or port shown in terminal)
 
 ## Development
 The project requires no build tools or dependencies. Simply open index.html in any modern browser to start development.
