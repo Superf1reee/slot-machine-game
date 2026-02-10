@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>УЁБИЩНОЕ КАЗИНО | Игра для дегенератов</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="app">
+        <!-- Экран авторизации -->
+        <div id="authScreen" class="screen">
+            <div class="auth-container">
+                <h1 class="main-title">🍆 ДОБРО ПОЖАЛОВАТЬ В АД 🍆</h1>
+                
+                <div class="auth-box">
+                    <h2>СОЗДАЙ АККАУНТ, МУДАК</h2>
+                    
+                    <div class="input-group">
+                        <input type="text" id="username" placeholder="ТВОЁ ПРОКЛЯТОЕ ИМЯ" maxlength="20">
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="ПАРОЛЬ (ХУЙ ЗАПОМНИШЬ)">
+                    </div>
+                    
+                    <div class="auth-buttons">
+                        <button id="registerBtn" class="btn btn-blood">РЕГИСТРАЦИЯ</button>
+                        <button id="loginBtn" class="btn btn-toxic">ВОЙТИ</button>
+                    </div>
+                    
+                    <div class="auth-message" id="authMessage"></div>
+                    
+                    <div class="dev-note">
+                        <p>⚠️ Это не настоящее казино, дебил. Никаких реальных денег.</p>
+                        <p>⚠️ Все данные хранятся в твоём браузере. Обновишь страницу - потеряешь всё.</p>
+                        <p>⚠️ Если ты лох - значит, ты здесь.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Экран игры -->
+        <div id="gameScreen" class="screen" style="display: none;">
+            <div class="game-header">
+                <div class="user-info">
+                    <span id="currentUser">Анонимный лох</span>
+                    <button id="logoutBtn" class="btn-small">ВЫЙТИ</button>
+                </div>
+                
+                <h1 class="game-title">🎰 УЁБИЩНОЕ КАЗИНО 🎰</h1>
+                
+                <div class="balance-info">
+                    <div class="balance-display">
+                        💰 <span id="balanceAmount">5000</span> ДЕНЕГ
+                    </div>
+                    <div class="level-display">
+                        🎯 УРОВЕНЬ: <span id="playerLevel">1</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-body">
+                <!-- Левая панель - слоты -->
+                <div class="slot-section">
+                    <div class="slot-machine">
+                        <div class="slot" id="slot1">🍒</div>
+                        <div class="slot" id="slot2">🍋</div>
+                        <div class="slot" id="slot3">🍉</div>
+                        <div class="slot" id="slot4">⭐</div>
+                        <div class="slot" id="slot5">💎</div>
+                    </div>
+                    
+                    <div class="insult-display" id="insultDisplay">
+                        НАЖМИ "КРУТИТЬ", ТВАРЬ!
+                    </div>
+                    
+                    <div class="game-controls">
+                        <div class="bet-controls">
+                            <button class="btn btn-shit" onclick="changeBet(-100)">-100</button>
+                            <div class="bet-display">
+                                СТАВКА: <span id="currentBet">500</span> ДЕНЕГ
+                            </div>
+                            <button class="btn btn-shit" onclick="changeBet(100)">+100</button>
+                        </div>
+                        
+                        <button id="spinButton" class="btn btn-blood btn-big">
+                            🎰 КРУТИТЬ СЛОТЫ 🎰
+                        </button>
+                        
+                        <div class="action-buttons">
+                            <button class="btn btn-toxic" onclick="maxBet()">
+                                ВСЁ НА КОН
+                            </button>
+                            <button class="btn btn-piss" onclick="resetGame()">
+                                НАЧАТЬ СНАЧАЛА
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Правая панель - информация -->
+                <div class="info-section">
+                    <div class="stats-panel">
+                        <h3>📊 СТАТИСТИКА ЛОХА</h3>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <div class="stat-label">СПИНОВ</div>
+                                <div class="stat-value" id="spinsCount">0</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-label">ПОБЕД</div>
+                                <div class="stat-value" id="winsCount">0</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-label">ПОРАЖЕНИЙ</div>
+                                <div class="stat-value" id="lossesCount">0</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-label">САМЫЙ БОЛЬШОЙ ВЫИГРЫШ</div>
+                                <div class="stat-value" id="biggestWin">0</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="combinations-panel">
+                        <h3>🎲 ДОСТУПНЫЕ КОМБИНАЦИИ</h3>
+                        <div id="combinationsList" class="combinations-list">
+                            <!-- Комбинации загружаются через JS -->
+                        </div>
+                    </div>
+
+                    <div class="cheats-panel">
+                        <h3>⚡ ЧИТЫ ДЛЯ ЛУЗЕРОВ</h3>
+                        <div class="cheats-grid">
+                            <button class="cheat-btn" onclick="cheatMoney()">
+                                💸 ДОБАВИТЬ 10000
+                            </button>
+                            <button class="cheat-btn" onclick="cheatJackpot()">
+                                🎰 СИМУЛИРОВАТЬ ДЖЕКПОТ
+                            </button>
+                            <button class="cheat-btn" onclick="toggleAutoSpin()">
+                                🤖 АВТО-СПИН
+                            </button>
+                            <button class="cheat-btn" onclick="insultMeMore()">
+                                🗣️ ОСКОРБИ МЕНЯ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-footer">
+                <div class="achievements">
+                    <h3>🏆 ДОСТИЖЕНИЯ</h3>
+                    <div id="achievementsList" class="achievements-list">
+                        <!-- Достижения загружаются через JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="game.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
