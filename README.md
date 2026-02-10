@@ -30,8 +30,6 @@ If you enjoy my project, you can support me here:
 5. Unlock achievements as you play
 
 
-## Quick Start
-
 ## 🚀 Quick Start
 
 ### Option 1: GitHub Pages (Recommended)
@@ -41,17 +39,12 @@ If you enjoy my project, you can support me here:
 4. Your game will be live at `https://[username].github.io/slot-machine-game/`
 
 ### Option 2: Local Development
-
-#### Step 1: Clone repository
-```bash
-git clone https://github.com/superf1reee/slot-machine-game.git
-cd slot-machine-game
-Step 2: Run local server (choose one)
-Using Python:
-
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/superf1reee/slot-machine-game.git
+   cd slot-machine-game
 Run a local server (choose one):
 
-bash
 # Python 3
 python -m http.server 8000
 
@@ -61,7 +54,7 @@ npx serve
 # Or simply open index.html in browser
 Open http://localhost:8000 in your browser
 
-🔧 Development
+Development
 The project requires no build tools or dependencies. Simply open index.html in any modern browser to start development.
 
 # Key Files
