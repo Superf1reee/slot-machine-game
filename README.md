@@ -7,6 +7,22 @@ If you enjoy my project, you can support me here:
 
 [![GitHub stars](https://img.shields.io/github/stars/superf1reee/slot-machine-game?style=social)](https://github.com/superf1reee/slot-machine-game/stargazers)
 
+## AI‑ASSISTED DEVELOPMENT
+
+This project was developed with the help of modern AI tools.
+
+**My workflow:**
+- Human: project vision, feature planning, testing, UX decisions
+- AI: code generation, debugging, optimization, documentation
+
+This is not "copy‑paste". This is **AI‑human collaboration**:
+- I describe what I need
+- AI generates the implementation
+- I review, test, improve, repeat
+
+Every line of code is checked, tested, and approved by me.
+
+
 ## Features
 - 5-reel slot machine with smooth animations
 - Local storage-based user accounts
