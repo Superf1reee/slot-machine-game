@@ -11,6 +11,8 @@ If you enjoy my project, you can support me here:
 
 This project was developed with the help of modern AI tools.
 
+🎰 **Play now:** [superf1reee.github.io/slot-machine-game](https://superf1reee.github.io/slot-machine-game/)
+
 ## Features
 - 5-reel slot machine with smooth animations
 - Local storage-based user accounts
@@ -91,5 +93,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 GitHub: @superf1reee
 
 Telegram: @superf1re_1337
+
 
 Project Link: https://github.com/superf1reee/slot-machine-game
